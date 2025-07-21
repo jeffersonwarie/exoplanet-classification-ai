@@ -28,7 +28,7 @@ def main():
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝
 
-🚀 Setting up your Streamlit exoplanet classification app...
+Setting up your Streamlit exoplanet classification app...
 """)
 
     # Check if we're in the right directory
@@ -140,39 +140,39 @@ streamlit_monitoring.db
     create_file('.gitignore', gitignore_content)
 
     # 5. Update README.md
-    readme_content = """# 🪐 Exoplanet Classification AI
+    readme_content = """# Exoplanet Classification AI
 
 An advanced machine learning application for classifying exoplanets with real-time monitoring and analytics.
 
-## 🚀 Features
+## Features
 
-- **🤖 AI-Powered Classification**: Neural network trained on 5,000+ exoplanets
-- **🌐 Interactive Interface**: User-friendly Streamlit web application  
-- **📊 Real-time Monitoring**: Built-in prediction tracking and analytics
-- **🪐 Multiple Planet Types**: Classify Terrestrial, Super Earth, Neptune-like, Gas Giant
-- **📈 Comprehensive Analytics**: Confidence analysis and temporal trends
+- **AI-Powered Classification**: Neural network trained on 5,000+ exoplanets
+- **Interactive Interface**: User-friendly Streamlit web application  
+- **Real-time Monitoring**: Built-in prediction tracking and analytics
+- **Multiple Planet Types**: Classify Terrestrial, Super Earth, Neptune-like, Gas Giant
+- **Comprehensive Analytics**: Confidence analysis and temporal trends
 
-## 🎯 Live Demo
+## Live Demo
 
-**[🌟 Try the App](https://your-app-name.streamlit.app)** *(Update this URL after deployment)*
+**[Try the App](https://your-app-name.streamlit.app)** *(Update this URL after deployment)*
 
-## 🔬 How to Use
+## How to Use
 
 1. **Enter Planet Data**: Input observational and physical characteristics
 2. **Get Prediction**: AI classifies the planet type with confidence scores
 3. **View Analytics**: Monitor prediction trends and model performance
 4. **Explore Results**: Detailed probability breakdowns for each classification
 
-## 📊 Planet Types Classified
+## Planet Types Classified
 
 | Type | Description | Examples |
 |------|-------------|----------|
-| 🌍 Terrestrial | Rocky planets like Earth | Earth, Mars, Venus |
-| 🌎 Super Earth | Large rocky planets | Kepler-442b, K2-18b |  
-| 🌀 Neptune-like | Gas planets with atmospheres | Neptune, Uranus |
-| 🪨 Gas Giant | Large gas planets | Jupiter, Saturn |
+| Terrestrial | Rocky planets like Earth | Earth, Mars, Venus |
+| Super Earth | Large rocky planets | Kepler-442b, K2-18b |  
+| Neptune-like | Gas planets with atmospheres | Neptune, Uranus |
+| Gas Giant | Large gas planets | Jupiter, Saturn |
 
-## 💻 Technology Stack
+## Technology Stack
 
 - **ML Framework**: PyTorch Neural Networks
 - **Frontend**: Streamlit 
@@ -180,18 +180,18 @@ An advanced machine learning application for classifying exoplanets with real-ti
 - **Database**: SQLite for monitoring
 - **Deployment**: Streamlit Cloud
 
-## 📈 Model Performance
+## Model Performance
 
 - **Training Data**: 5,250 confirmed exoplanets
-- **Accuracy**: 85%+ on test set
+- **Accuracy**: 90%+ on test set
 - **Features**: 11 astronomical characteristics
 - **Architecture**: Deep neural network with dropout and batch normalization
 
-## 🚀 Local Development
+## Local Development
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/exoplanet-classification-ai.git
+git clone https://github.com/jeffersonwarie/exoplanet-classification-ai.git
 cd exoplanet-classification-ai
 
 # Install dependencies
@@ -201,7 +201,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## 📝 Data Input Format
+## Data Input Format
 
 The model expects these features:
 - Distance (light-years)
@@ -214,14 +214,14 @@ The model expects these features:
 - Eccentricity
 - Detection method
 
-## 🔧 Configuration
+## Configuration
 
 The app includes comprehensive monitoring and can be customized through:
 - Streamlit configuration (`.streamlit/config.toml`)
 - Model parameters (in training script)
 - UI themes and styling
 
-## 📊 Monitoring Features
+## Monitoring Features
 
 - **Prediction Tracking**: All classifications logged with timestamps
 - **Confidence Analysis**: Model performance metrics and trends
@@ -230,9 +230,6 @@ The app includes comprehensive monitoring and can be customized through:
 
 ---
 
-**Made with ❤️ for space exploration and machine learning**
-
-*This project demonstrates the power of AI in astronomical research and makes exoplanet classification accessible to everyone.*
 """
     create_file('README.md', readme_content)
 
@@ -249,7 +246,7 @@ import webbrowser
 from pathlib import Path
 
 def test_app():
-    print("🧪 Testing Streamlit app locally...")
+    print("Testing Streamlit app locally...")
     
     # Check if required files exist
     required_files = [
@@ -265,11 +262,11 @@ def test_app():
             missing_files.append(file)
     
     if missing_files:
-        print(f"❌ Missing files: {', '.join(missing_files)}")
+        print(f"Missing files: {', '.join(missing_files)}")
         if 'streamlit_exoplanet_app.py' in missing_files:
-            print("   📋 Copy the main app code from the Streamlit artifact")
+            print("Copy the main app code from the Streamlit artifact")
         if 'exoplanet_model.pth' in missing_files:
-            print("   🤖 Add your trained model file")
+            print("Add your trained model file")
         return False
     
     print("✅ All required files present")
@@ -285,16 +282,16 @@ def test_app():
     
     # Test import
     try:
-        print("🔍 Testing imports...")
+        print("Testing imports...")
         import streamlit_exoplanet_app
-        print("✅ App imports successfully")
+        print("App imports successfully")
     except ImportError as e:
-        print(f"❌ Import error: {e}")
+        print(f"Import error: {e}")
         return False
     
-    print("🚀 Starting Streamlit app...")
-    print("   Opening http://localhost:8501 in your browser...")
-    print("   Press Ctrl+C to stop the server")
+    print("Starting Streamlit app...")
+    print("Opening http://localhost:8501 in your browser...")
+    print("Press Ctrl+C to stop the server")
     
     # Open browser after a delay
     def open_browser():
@@ -316,9 +313,9 @@ if __name__ == "__main__":
     os.chmod('test_local.py', 0o755)
 
     print(f"""
-✅ Setup complete! Files created:
+Setup complete! Files created:
 
-📁 Project Structure:
+Project Structure:
 ├── app.py                          # Main entry point
 ├── requirements.txt               # Dependencies
 ├── README.md                      # Updated documentation
@@ -328,8 +325,8 @@ if __name__ == "__main__":
     └── config.toml                # Streamlit configuration
 
 ⚠️  Still needed:
-├── streamlit_exoplanet_app.py     # 📋 Copy from Streamlit artifact
-└── exoplanet_model.pth           # 🤖 Your trained model
+├── streamlit_exoplanet_app.py     # Copy from Streamlit artifact
+└── exoplanet_model.pth           # Your trained model
 
 🚀 Next steps:
 
@@ -344,7 +341,7 @@ if __name__ == "__main__":
 
 4. Commit and push:
    git add .
-   git commit -m "🚀 Add Streamlit app files"
+   git commit -m "Add Streamlit app files"
    git push origin main
 
 5. Deploy on Streamlit Cloud:
@@ -352,7 +349,7 @@ if __name__ == "__main__":
    - Connect your GitHub repository
    - Deploy with main file: app.py
 
-🌟 Your app will be live at: https://your-repo-name.streamlit.app
+Your app will be live at: https://your-repo-name.streamlit.app
 """)
 
 if __name__ == "__main__":

@@ -1,36 +1,36 @@
-# 🪐 Exoplanet Classification AI
+# Exoplanet Classification AI
 
 An advanced machine learning application for classifying exoplanets with real-time monitoring and analytics.
 
-## 🚀 Features
+## Features
 
-- **🤖 AI-Powered Classification**: Neural network trained on 5,000+ exoplanets
-- **🌐 Interactive Interface**: User-friendly Streamlit web application  
-- **📊 Real-time Monitoring**: Built-in prediction tracking and analytics
-- **🪐 Multiple Planet Types**: Classify Terrestrial, Super Earth, Neptune-like, Gas Giant
-- **📈 Comprehensive Analytics**: Confidence analysis and temporal trends
+- **AI-Powered Classification**: Neural network trained on 5,000+ exoplanets
+- **Interactive Interface**: User-friendly Streamlit web application  
+- **Real-time Monitoring**: Built-in prediction tracking and analytics
+- **Multiple Planet Types**: Classify Terrestrial, Super Earth, Neptune-like, Gas Giant
+- **Comprehensive Analytics**: Confidence analysis and temporal trends
 
-## 🎯 Live Demo
+## Live Demo
 
-**[🌟 Try the App](https://your-app-name.streamlit.app)** *(Update this URL after deployment)*
+**[Try the App](https://your-app-name.streamlit.app)** *(Update this URL after deployment)*
 
-## 🔬 How to Use
+## How to Use
 
 1. **Enter Planet Data**: Input observational and physical characteristics
 2. **Get Prediction**: AI classifies the planet type with confidence scores
 3. **View Analytics**: Monitor prediction trends and model performance
 4. **Explore Results**: Detailed probability breakdowns for each classification
 
-## 📊 Planet Types Classified
+## Planet Types Classified
 
 | Type | Description | Examples |
 |------|-------------|----------|
-| 🌍 Terrestrial | Rocky planets like Earth | Earth, Mars, Venus |
-| 🌎 Super Earth | Large rocky planets | Kepler-442b, K2-18b |  
-| 🌀 Neptune-like | Gas planets with atmospheres | Neptune, Uranus |
-| 🪨 Gas Giant | Large gas planets | Jupiter, Saturn |
+| Terrestrial | Rocky planets like Earth | Earth, Mars, Venus |
+| Super Earth | Large rocky planets | Kepler-442b, K2-18b |  
+| Neptune-like | Gas planets with atmospheres | Neptune, Uranus |
+| Gas Giant | Large gas planets | Jupiter, Saturn |
 
-## 💻 Technology Stack
+## Technology Stack
 
 - **ML Framework**: PyTorch Neural Networks
 - **Frontend**: Streamlit 
@@ -38,10 +38,10 @@ An advanced machine learning application for classifying exoplanets with real-ti
 - **Database**: SQLite for monitoring
 - **Deployment**: Streamlit Cloud
 
-## 📈 Model Performance
+## Model Performance
 
 - **Training Data**: 5,250 confirmed exoplanets
-- **Accuracy**: 85%+ on test set
+- **Accuracy**: 90%+ on test set
 - **Features**: 11 astronomical characteristics
 - **Architecture**: Deep neural network with dropout and batch normalization
 
@@ -49,7 +49,7 @@ An advanced machine learning application for classifying exoplanets with real-ti
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/exoplanet-classification-ai.git
+git clone https://github.com/jeffersonwarie/exoplanet-classification-ai.git
 cd exoplanet-classification-ai
 
 # Install dependencies
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## 📝 Data Input Format
+## Data Input Format
 
 The model expects these features:
 - Distance (light-years)
@@ -72,14 +72,14 @@ The model expects these features:
 - Eccentricity
 - Detection method
 
-## 🔧 Configuration
+## Configuration
 
 The app includes comprehensive monitoring and can be customized through:
 - Streamlit configuration (`.streamlit/config.toml`)
 - Model parameters (in training script)
 - UI themes and styling
 
-## 📊 Monitoring Features
+## Monitoring Features
 
 - **Prediction Tracking**: All classifications logged with timestamps
 - **Confidence Analysis**: Model performance metrics and trends
@@ -87,7 +87,3 @@ The app includes comprehensive monitoring and can be customized through:
 - **Performance Monitoring**: Response times and system health
 
 ---
-
-**Made with ❤️ for space exploration and machine learning**
-
-*This project demonstrates the power of AI in astronomical research and makes exoplanet classification accessible to everyone.*
