@@ -93,9 +93,11 @@ class ExoplanetPredictor:
     
     @st.cache_resource
     def load_model(_self, model_path: str):
-        """Load the trained model"""
+        """Load the trained model with sklearn compatibility"""
         try:
-            checkpoint = torch.load(model_path, map_location=_self.device)
+            # This tells PyTorch to trust sklearn objects in your checkpoint
+            # Only do this for models you created yourself or trust completely
+            checkpoint = torch.load(model_path, map_location=_self.device, weights_only=False)
             
             _self.scaler = checkpoint['scaler']
             _self.label_encoders = checkpoint['label_encoders']
